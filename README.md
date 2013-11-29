@@ -1,4 +1,4 @@
-portfolio
-=========
+Professional Portfolio
+======================
 
-Web page of my professional portfolio.
+Simple web page of my professional portfolio.
