@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://getbootstrap.com/examples/navbar/navbar.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body style="">
+    <div class="container">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Jorge Saldivar Galli's Portfolio</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Education<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#clubdeothello">Club de Othello</a></li>
+                            <li><a href="#labyrinth">Labyrinth</a></li>
+                            <li><a href="#poll">Poll</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Research<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#bpe">Business Process Emulator</a></li>
+                            <li><a href="#agora">Agora 2.0</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Personal<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#attendance">Fingerprint Attendance</a></li>
+                            <li><a href="#meteo">Meteo Thermometer</a></li>
+                            <li><a href="#mgmtsystem">Management System</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="mailto:jorgesaldivar@gmail.com"><img src="img/message.png" width="25" height="25"></a> 
+                    </li>
+                    <li>
+                        <a href="http://www.linkedin.com/profile/view?id=160370332&trk"><img src="img/linkedin.png" width="25" height="25"></a> 
+                    </li>
+                    <li>
+                        <a href="https://github.com/joausaga"><img src="img/github.png" width="25" height="25"></a> 
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/jorgesaldivar"><img src="img/twitter.png" width="25" height="25"></a> 
+                    </li>
+                </ul>    
+            </div><!--/.nav-collapse -->
+        </div>
+        <div class="jumbotron">
+            <p><h1>Hola!</h1></p>
+            <p><b>A little bit about me.</b> In 2006, I finished my bachelor in Computer Science. From that time, I spent most of my time working for projects related with the developing of technology for social impact. In particular, a big part of my first years as Software Engineer I was involved in the deployment of the project <a href="http://one.laptop.org/">One Laptop per Child (OLPC)</a> in rural communities of my country, Paraguay.</p>
+            <p>All of my contributions to OLPC are summarized here as well as the description of some personal and research projects I made during my last time as PhD student.</p>
+        </div>
+        <!-- Education -->
+        <div id="education" class="bs-docs-section clearfix">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h1 id="navbar">Education</h1>
+                    </div>
+                    <div id="clubdeothello" class="panel panel-danger">
+                        <div class="panel-heading">Club de Othello
+                            <iframe style="vertical-align:middle;" align="right" src="http://ghbtns.com/github-btn.html?user=joausaga&repo=clubdeothello&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+                        </div>
+                        <div class="panel-body">
+                            <p>OLPC Sugar educational game that aims at helping visually impaired children to learn spatio-temporals concepts as well as improve their social abilities.</p>
+                            <p><b>Features.</b> a) the game uses the metaphor of a club of Othello (or Reversi) players for guiding the child's learning process; b) before taking part of his/her first match, the child has to take tutorial where she/he is introduced in the rules of Othello; c) the child progresses in the game beating other club members; d) each beated opponent rewards the child with a badge.</p>
+                            <p>Take a look at the video for a short demo (in spanish).</p>
+                            <iframe width="640" height="360" src="http://www.youtube.com/embed/QAamoD3aB6s?rel=0" frameborder="0" allowfullscreen></iframe><br>
+                            <button class="btn btn-danger btn-large" onclick="location.href='https://github.com/joausaga/clubdeothello'"><i class="icon-white icon-download-alt"></i>Install</button>
+                        </div>
+                        <div class="panel-footer"><b>Technologies:</b><i> Python, Sugar SDK, Festival</i></div>
+                    </div>
+                    <div id="labyrinth" class="panel panel-info">
+                        <div class="panel-heading">Labyrinth</div>
+                        <div class="panel-body">
+                            <p>OLPC Sugar application for creating mind-maps. It supports the construction of maps composed of texts, images and drawings.</p>
+                            <p><i>Obs. Part of the developer team</i></p>
+                            <img src="img/labyrinth.png" with="488" height="325"><br><br>
+                            <button class="btn btn-info btn-large" onclick="location.href='http://activities.sugarlabs.org/en-US/sugar/addon/4078'"><i class="icon-white icon-download-alt"></i>Download</button>
+                        </div>
+                        <div class="panel-footer"><b>Technologies:</b><i> Python, Sugar SDK</i></div>
+                    </div>
+                    <div id="poll" class="panel panel-success">
+                        <div class="panel-heading">Poll</div>
+                        <div class="panel-body">
+                            <p>OLPC Sugar application for creating polls and collecting votes regarding community issues.</p>
+                            <p><b>Features.</b> a) children can create their own polls and answer choices; b) answer choices can be texts, images or both; c) polls can be answered through the mesh network.</p>
+                            <p><i>Obs. Part of the developer team</i></p>
+                            <img src="img/pool.png" width="480" height="360"><br><br>
+                            <button class="btn btn-success btn-large" onclick="location.href='http://activities.sugarlabs.org/en-US/sugar/addon/4074'"><i class="icon-white icon-download-alt"></i>Download</button>
+                        </div>
+                        <div class="panel-footer"><b>Technologies:</b><i> Python, Sugar SDK</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Research -->
+        <div id="research" class="bs-docs-section clearfix">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h1 id="navbar">Research</h1>
+                    </div>
+                    <div id="bpe" class="panel panel-warning">
+                        <div class="panel-heading">Business Process Emulator</div>
+                        <div class="panel-body">
+                            <p>Flexible and powerful spreadsheet-based business process emulator able to perform functional testing of service-oriented business processes. The software includes a plugin for Signavio process modeler editor, a Google Sheet template and a web-service process emulator engine.</p>
+                            <p><b>Features.</b> a) emulation of service-based business process; b) functional testing of services associated to business processes.</p>
+                            <img src="img/bpemulator.png" with="450" height="250">&nbsp;&nbsp;
+                            <img src="img/bpemulator2.png" with="450" height="250"><br><br>
+                            <button class="btn btn-warning btn-large" onclick="location.href='https://sourceforge.net/projects/bpemulator'"><i class="icon-white icon-download-alt"></i>Download</button>
+                        </div>
+                        <div class="panel-footer"><b>Technologies:</b><i> Java (Play Framework), Javascript, Google Drive SDK, Signavio Process Modeler, MySQL, Activi Process Engine, Google App Script</i></div>
+                    </div>
+                    <div id="agora" class="panel panel-info">
+                        <div class="panel-heading">Agora 2.0
+                            <iframe style="vertical-align:middle;" align="right" src="http://ghbtns.com/github-btn.html?user=joausaga&repo=agora20&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+                        </div>
+                        <div class="panel-body">
+                            <p>Web-based system constructed to foster civic-participation regarding local issues.</p>
+                            <p><b>Features.</b> a) implemented to run in public display; b) integrated with Idea Scale, a high-popular idea management system; c) offer an adminstration front-end where public administration staffs can post questions in terms of yes/no pools; d) citizens can participate by agreeing and disagreeing on the posted questions; e) languages: English, Italian.</p>
+                            <p><i>Obs. Main developer</i></p>
+                            <img src="img/agora20.png" width="454" height="262">
+                        </div>
+                        <div class="panel-footer"><b>Technologies:</b><i> Java (Play Framework), Javascript (Jquery), CSS (Bootstrap), MySQL</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Personal -->
+        <div id="personal" class="bs-docs-section clearfix">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h1 id="navbar">Personal</h1>
+                    </div>
+                    <div class="panel panel-success">
+                        <div id="attendance" class="panel-heading">Fingerprint Attendance
+                        <iframe style="vertical-align:middle;" align="right" src="http://ghbtns.com/github-btn.html?user=joausaga&repo=fingerprint_attendance&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+                        </div>
+                        <div class="panel-body"><p>Open-source linux application program that aims at controling people's attendance to conferences, courses, events, work using a fingerprint reader.</p><p><b>Features.</b> a) fingerprint assistance control; b) registry aggregation by events; c) assistance reports.</p>
+                        <img src="img/assistance-screen.png" width="434" height="262">&nbsp;&nbsp;
+                        <img src="img/admin-screen.png" width="434" height="262"><br><br>
+                        <button class="btn btn-success btn-large" onclick="location.href='http://sourceforge.net/projects/attendencesys/files/latest/download'"><i class="icon-white icon-download-alt"></i>Download</button>
+                        </div>
+                        <div class="panel-footer"><b>Technologies:</b><i> Python, MySQL, Eikon USB fingerprint reader</i></div>
+                    </div>
+                    <div id="meteo" class="panel panel-danger">
+                        <div class="panel-heading">Meteo Thermometer
+                        <iframe style="vertical-align:middle;" align="right" src="http://ghbtns.com/github-btn.html?user=joausaga&repo=thermometer&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+                        </div>
+                        <div class="panel-body">
+                        <p>Open-source android application that leverages weather local services to provide the users highly accurate weather temperature information. This information is displayed in a simple and nice home-screen widget.</p>
+                        <p><b>Features.</b> a) configuration of the city and temperature unit measurement; b) weather statistics information grouped by preset filters: day, week, month, semester and year; c) languages: English, Italian and Spanish.</p>
+                        <img alt="Widget" src="https://lh5.ggpht.com/hAgxJ7wzpxaBJP9YsLu6Lwi_jSTs94M3dbBkkFrQ9k71A6a3YSrCddaJcCWHcLT5F74=h310-rw" />&nbsp;&nbsp;&nbsp;
+<img alt-"Configurations Tab" src="https://lh5.ggpht.com/Dn3uCz1YOFOeykxYuUzJZulTj8RME4PpAxwmm_AsHHzlyAf_NxJYs7PxzsJoiWw23lwj=h310-rw"/>&nbsp;&nbsp;&nbsp;
+<img alt="Statistics Tab" src="https://lh3.ggpht.com/yhgwnbkS-BGxFdhZD-b6yXXq9hrV-KwwZnMkbGeyyucMP0vh6eaV93GOB57Zf6tVLBJd=h310-rw"/><br><br>
+                        <button class="btn btn-danger btn-large" onclick="location.href='https://play.google.com/store/apps/details?id=com.lemontruck.thermo'"><i class="icon-white icon-download-alt"></i>Download</button>
+                        </div>
+                        <div class="panel-footer"><b>Technologies:</b><i> Java, Android SDK, SQLite</i></div>
+                    </div>
+                    <div id="mgmtsystem" class="panel panel-warning">
+                        <div class="panel-heading">Management System</div>
+                        <div class="panel-body">
+                            Web-based system for managing product stock, selling, finances, customers, providers, accounting, products, billing of the industry.<br><br>
+                            <p><i>Obs. Part of the developer team</i></p>
+                            <img alt="AISA Screenshot" src="img/aisa_screenshot2.png" width="600" height="320"/>
+                        </div>
+                        <div class="panel-footer"><b>Technologies:</b><i> Ruby on Rails, MySQL, Javascript (Qooxdoo)</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">    
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li><b>Education</b><li>
+                        <li><a href="#clubdeothello">Club de Othello</a></li>
+                        <li><a href="#labyrinth">Labyrinth</a></li>
+                        <li><a href="#poll">Poll</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li><b>Research</b><li>
+                        <li><a href="#bpe">Business Process Emulator</a></li>
+                        <li><a href="#agora">Agora 2.0</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li><b>Personal</b><li>
+                        <li><a href="#attendance">Fingerprint Attendance</a></li>
+                        <li><a href="#meteo">Meteo Thermometer</a></li>
+                        <li><a href="#mgmtsystem">Management System</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-md-12">
+                    <p class="muted credit pull-right">Jorge Saldivar Galli. 2013</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
